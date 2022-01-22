@@ -26,7 +26,7 @@
                         @method('put')
                         <div class="form-group">
                             <label for="">Nama Barang</label>
-                            <select name="id_barang" class="form-control @error('id_barang') is-invalid @enderror" >
+                            <select name="id_barang" class="form-control @error('id_barang') is-invalid @enderror" disabled>
                                 @foreach($barang as $data)
                                     <option value="{{$data->id}}">{{$data->nama_barang}}</option>
                                 @endforeach
